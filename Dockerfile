@@ -12,9 +12,7 @@ RUN \
   apt-get install -y vim wget curl git maven
 
 RUN \
-  git clone https://github.com/kermitt2/grobid.git
-
-RUN \
+  git clone https://github.com/kermitt2/grobid.git && \
   cd grobid && \
   mvn install -DskipTests
 
